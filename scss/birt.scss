@@ -4,10 +4,19 @@ $bigarrena:rgb(176,224,230);
 $txuria:#fff;
 $storie:rgba(0,154,183,.2);
 
-$primary: $nagusia;
 
-.text-primary {
+.primary-text {
+    color: $nagusia !important;
+}
+
+.icon-link{
     color: $nagusia;
 }
+
+li img{
+    width: 50px;
+    height: 50px;
+}
+
 @import "../bootstrap/css/bootstrap.min.css";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");

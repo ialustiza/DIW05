@@ -1,0 +1,25 @@
+/* Creamos 5 variables:*/
+$nagusia:rgb(0,154,183);
+$bigarrena:rgb(176,224,230);
+$txuria:#fff;
+$storie:rgba(0,154,183,.2);
+
+@import "bootstrap/css/bootstrap.min.css";
+
+.text-primary{
+    color: $nagusia;
+}
+
+.icon-link{
+    color: $nagusia;
+    img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.placeholder{
+    color: $bigarrena;
+}
+
+

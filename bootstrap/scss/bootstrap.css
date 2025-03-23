@@ -1,58 +1,4 @@
 @charset "UTF-8";
-/* Creamos 5 variables:*/
-body {
-  color: rgb(0, 154, 183) !important;
-}
-body a {
-  color: rgb(0, 154, 183) !important;
-}
-body .txikitu {
-  line-height: 0.2em;
-}
-body .txikitu p {
-  font-size: 0.6em;
-}
-body .erabiltzailea p {
-  display: inline;
-  margin-left: 0.5em;
-}
-body .erabiltzailea a {
-  text-decoration: none;
-}
-body .list-group-item {
-  border: 0;
-}
-body .list-group-item a {
-  text-decoration: none;
-}
-body .list-group-item a img {
-  border-style: solid;
-  border-color: rgb(0, 154, 183);
-  border-width: 0.1em;
-}
-body .list-group-item a p {
-  display: inline;
-}
-body .list-group-item a i {
-  margin-right: 0.5em;
-}
-body .card {
-  color: rgb(0, 154, 183);
-  border-width: 0.25em;
-  border-color: rgb(176, 224, 230);
-}
-body .card .btn {
-  color: rgb(0, 154, 183);
-  background-color: rgb(176, 224, 230);
-}
-body .icon-link {
-  color: rgb(0, 154, 183) !important;
-}
-body img.rounded-circle {
-  width: 50px;
-  height: 50px;
-}
-
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -12018,4 +11964,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}/*# sourceMappingURL=birt.css.map */
+}/*# sourceMappingURL=bootstrap.css.map */

@@ -17,8 +17,12 @@
     <title>BIRT</title>
 </head>
 <body class="container-fluid">
+    <!--
+    <Header-a itxura desberdinaten ikusi behar dira pantailen neurrien arabera. Horretarako 3 header sortuko ditugu.
+    <Burualdea pantailaren neurri osoa dagoenean:
+    -->
     <header class="row">
-        <article class="col">
+        <article class="col d-none d-lg-block">
             <a href=""><img class="img-fluid w-auto" src="images/Logo_Birt.PNG" alt=""></a></img>
             <i class="bi bi-search"></i>
             <input class="d-inline form-control w-auto" type="text" placeholder="Bilatu"/>
@@ -44,139 +48,205 @@
             </ul>
         </article>
     </header>
-<main class="row">
-    <section class="col d-none d-md-block">
-        <article class="erabiltzailea">
-            <a href="">
-                <img class="img-fluid rounded-circle" src="images/persona1.jpg" alt="">
-                <p class="fw-bold">Gaizka Zengotita</p>
-            </a>
+    <!--
+    <Burualdea pantailaren neurria tableta denean:
+    -->
+    <header class="row">
+        <article class="col d-none d-md-block">
+            <a href=""><img class="img-fluid w-auto" src="images/Logo_Birt.PNG" alt=""></a></img>
+            <i class="bi bi-search"></i>
+            <input class="d-inline form-control w-auto" type="text" placeholder="Bilatu"/>
         </article>
-        <article>
-            <ul class="list-group">
-                <li class="list-group-item"><a href=""><i class="bi bi-people"></i><p >Lagunak</p></a></li>
-                <li class="list-group-item"><a href=""><i class="bi bi-flag"></i><p>Orrialdeak</p></a></li>
-                <li class="list-group-item"><a href=""><i class="bi bi-collection"></i><p>Taldeak</p></a></li>
-                <li class="list-group-item"><a href=""><i class="bi bi-bag"></i><p>Azoka</p></a></li>
-                <li class="list-group-item"><a href=""><i class="bi bi-tv"></i><p>Watch</p></a></li>
-                <li class="list-group-item"><a href=""><i class="bi bi-calendar-event"></i></i><p>Ekitaldiak</p></a></li>
+        <article class="col fs-4">
+            <ul class="nav navbar justify-content-end">
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-grid-3x3-gap-fill"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-messenger"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-bell-fill"></i></a></li>
+                <li class="nav-item erabiltzailea"><a class="nav-link" href="">
+                    <img class="img-fluid rounded-circle" src="images/persona1.jpg" alt="" />
+                    <p>Gaizka</p>
+                </a></li>
             </ul>
         </article>
-        <article>
-            <ul class="list-group d-flex flex-row flex-wrap txikitu">
-                <li class="list-group-item"><a href=""><p>Pribatasuna</p></a></li>
-                <li class="list-group-item"><a href=""><p>Baldintzak</p></a></li>
-                <li class="list-group-item"><a href=""><p>Iragarkiak</p></a></li>
-                <li class="list-group-item"><a href=""><p>Iragarkian hobespenak</p></a></li>
-                <li class="list-group-item"><a href=""><p>Cookieak</p></a></li>
-                <li class="list-group-item"><a href=""><p>Gehiago</p></a></li>
+    </header>
+    <header class="row">
+        <article class="col-12 fs-2">
+            <ul class="nav nav-underline nav-fill justify-content-around">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-people"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-collection-play"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-shop"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-upload"></i></a></li>
             </ul>
         </article>
-    </section>
-    <section class="col-5">
-        <article class="d-flex justify-content-around">
-            <a class="container-fluid" href="">
-                <img class="img-fluid rounded float" src="images/persona1.jpg" alt="" />
-            </a>
-            <a class="container-fluid" href="">
-                <img class="img-fluid rounded w-100" src="images/paisaje2.jpg" alt="" />
-                <img class="img-fluid rounded-circle" src="images/persona2.jpg" alt="" />
-            </a>
-            <a class="container-fluid" href="">
-                <img class="img-fluid rounded float" src="images/paisaje1.jpg" alt="" />
-                <img class="img-fluid rounded-circle img-thumbnail" src="images/persona3.jpg" alt="" />
-            </a>
-            <a class="container-fluid" href="">
-                <img class="img-fluid rounded float" src="images/ad1.jpg" alt="" />
-                <img class="img-fluid rounded-circle img-thumbnail" src="images/persona4.jpg" alt="" />
-            </a>
+    </header>
+    <!--
+    <Burualdea pantailaren neurri mobilekoa edo txikiagoa denean:
+    -->
+    <header class="row">
+        <article class="col d-none d-md-block">
+            <a href=""><img class="img-fluid w-auto" src="images/Logo_Birt.PNG" alt=""></a></img>
+            <i class="bi bi-search"></i>
+            <input class="d-inline form-control w-auto" type="text" placeholder="Bilatu"/>
         </article>
-        <article class="card container-fluid d-flex align-items-center">
-            <header class="card-subtitle">
-                <img class="card-img-top img-fluid rounded-circle" src="images/persona1.jpg" alt="" />
-                <input class="d-inline form-control w-auto" type="text" placeholder="Zer dabilzu gogoan, Gorka?"/>
-                <div class="d-block-flex justify-content-around">
-                    <button type="button" class="btn" role="button"><i class="bi bi-camera-video m-2"></i>Zuzeneko bideoa</button>
-                    <button type="button" class="btn" role="button"><i class="bi bi-images m-2"></i>Argazkiak</button>
-                </div>
-            </header>
+    </header>
+    <header class="row">
+        <article class="col fs-4">
+            <ul class="nav navbar justify-content-end">
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-grid-3x3-gap-fill"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-messenger"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-bell-fill"></i></a></li>
+                <li class="nav-item erabiltzailea"><a class="nav-link" href="">
+                    <img class="img-fluid rounded-circle" src="images/persona1.jpg" alt="" />
+                    <p>Gaizka</p>
+                </a></li>
+            </ul>
         </article>
-        <article class="card container-fluid mt-2">
-            <header class="card-subtitle">
-                <img class="card-img-top img-fluid rounded-circle float-start m-2" src="images/persona3.jpg" alt="" />
-                <p class="fw-bold card-text">Jaione Perez</p>
-                <p class="card-text">Ordu 1</p>
-            </header>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <img class="img-fluid" src="images/paisaje1.jpg" alt="">
-                <div class="d-inline-flex justify-content-between">
-                    <a href=""><i class="bi bi-hand-thumbs-up-fill"></i><p class="d-inline-flex">60</p></a>
-                    <a href=""><p class="text-end">7 iruzkin</p></a>
-                </div>
-                <div class="d-inline-flex justify-content-around">
-                    <button type="button" class="btn" role="button"><i class="bi bi-hand-thumbs-up m-2"></i>Atsegin dut</button>
-                    <button type="button" class="btn" role="button"><i class="bi bi-chat m-2"></i>Iruzkindu</button>
-                </div>
+    </header>
+    <header class="row">
+        <article class="col fs-2">
+            <ul class="nav nav-underline nav-fill justify-content-around">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-people"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-collection-play"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-shop"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href=""><i class="bi bi-upload"></i></a></li>
+            </ul>
         </article>
-        <article class="card container-fluid mt-2">
-            <header class="card-subtitle">
-                <img class="card-img-top img-fluid rounded-circle float-start m-2" src="images/persona2.jpg" alt="" />
-                <p class="fw-bold card-text">Iker Arana</p>
-                <p class="card-text">2 ordu</p>
-            </header>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                <img class="img-fluid" src="images/paisaje2.jpg" alt="">
-                <div class="d-inline-flex justify-content-between">
-                    <a href=""><i class="bi bi-hand-thumbs-up-fill"></i><p class="d-inline-flex">75</p></a>
-                    <a href=""><p class="text-end">3 iruzkin</p></a>
-                </div>
-                <div class="d-inline-flex justify-content-around">
-                    <button type="button" class="btn" role="button"><i class="bi bi-hand-thumbs-up m-2"></i>Atsegin dut</button>
-                    <button type="button" class="btn" role="button"><i class="bi bi-chat m-2"></i>Iruzkindu</button>
-                </div>
-        </article>
-    </section>
-    <section class="col d-none d-md-block">
-        <article>
-            <p class="fw-bold">Kontaktuak</p>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="">
+    </header>
+    <main class="row">
+        <section class="col d-none d-md-block">
+            <article class="erabiltzailea">
+                <a href="">
+                    <img class="img-fluid rounded-circle" src="images/persona1.jpg" alt="">
+                    <p class="fw-bold">Gaizka Zengotita</p>
+                </a>
+            </article>
+            <article>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href=""><i class="bi bi-people"></i><p >Lagunak</p></a></li>
+                    <li class="list-group-item"><a href=""><i class="bi bi-flag"></i><p>Orrialdeak</p></a></li>
+                    <li class="list-group-item"><a href=""><i class="bi bi-collection"></i><p>Taldeak</p></a></li>
+                    <li class="list-group-item"><a href=""><i class="bi bi-bag"></i><p>Azoka</p></a></li>
+                    <li class="list-group-item"><a href=""><i class="bi bi-tv"></i><p>Watch</p></a></li>
+                    <li class="list-group-item"><a href=""><i class="bi bi-calendar-event"></i></i><p>Ekitaldiak</p></a></li>
+                </ul>
+            </article>
+            <article>
+                <ul class="list-group d-flex flex-row flex-wrap txikitu">
+                    <li class="list-group-item"><a href=""><p>Pribatasuna</p></a></li>
+                    <li class="list-group-item"><a href=""><p>Baldintzak</p></a></li>
+                    <li class="list-group-item"><a href=""><p>Iragarkiak</p></a></li>
+                    <li class="list-group-item"><a href=""><p>Iragarkian hobespenak</p></a></li>
+                    <li class="list-group-item"><a href=""><p>Cookieak</p></a></li>
+                    <li class="list-group-item"><a href=""><p>Gehiago</p></a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="col-5">
+            <article class="d-flex justify-content-around">
+                <a class="container-fluid" href="">
+                    <img class="img-fluid rounded float" src="images/persona1.jpg" alt="" />
+                </a>
+                <a class="container-fluid" href="">
+                    <img class="img-fluid rounded w-100" src="images/paisaje2.jpg" alt="" />
                     <img class="img-fluid rounded-circle" src="images/persona2.jpg" alt="" />
-                    <p>Iker Arana</p>
-                </a></li>
-                <li class="list-group-item"><a href="">
-                    <img class="img-fluid rounded-circle" src="images/persona3.jpg" alt="" />
-                    <p>Jaione Perez</p>
-                </a></li>
-                <li class="list-group-item"><a href="">
-                    <img class="img-fluid rounded-circle" src="images/persona4.jpg" alt="" />
-                    <p>Mikel Ardanza</p>
-                </a></li>
-                <li class="list-group-item"><a href="">
-                    <img class="img-fluid rounded-circle" src="images/persona5.jpg" alt="" />
-                    <p>Itziar Gortazar</p>
-                </a></li>
-            </ul>
-        </article>
-        <article>
-            <p class="fw-bold">Taldeak</p>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item"><a href="">
-                    <img class="img-fluid rounded-circle" src="images/DAM.png" alt="" />
-                    <p>DAM</p>
-                </a></li>
-                <li class="list-group-item"><a href="">
-                    <img class="img-fluid rounded-circle" src="images/DAW.png" alt="" />
-                    <p>DAW</p>
-                </a></li>
-            </ul>
-        </article>
-        <article>
-            <p class="fw-bold">Babestua</p>
-            <img class="img-fluid" src="images/ad2.jpg" alt="">
-        </article>
-    </section>
-</main>
+                </a>
+                <a class="container-fluid" href="">
+                    <img class="img-fluid rounded float" src="images/paisaje1.jpg" alt="" />
+                    <img class="img-fluid rounded-circle img-thumbnail" src="images/persona3.jpg" alt="" />
+                </a>
+                <a class="container-fluid" href="">
+                    <img class="img-fluid rounded float" src="images/ad1.jpg" alt="" />
+                    <img class="img-fluid rounded-circle img-thumbnail" src="images/persona4.jpg" alt="" />
+                </a>
+            </article>
+            <article class="card container-fluid d-flex align-items-center">
+                <header class="card-subtitle">
+                    <img class="card-img-top img-fluid rounded-circle" src="images/persona1.jpg" alt="" />
+                    <input class="d-inline form-control w-auto" type="text" placeholder="Zer dabilzu gogoan, Gorka?"/>
+                    <div class="d-block-flex justify-content-around">
+                        <button type="button" class="btn" role="button"><i class="bi bi-camera-video m-2"></i>Zuzeneko bideoa</button>
+                        <button type="button" class="btn" role="button"><i class="bi bi-images m-2"></i>Argazkiak</button>
+                    </div>
+                </header>
+            </article>
+            <article class="card container-fluid mt-2">
+                <header class="card-subtitle">
+                    <img class="card-img-top img-fluid rounded-circle float-start m-2" src="images/persona3.jpg" alt="" />
+                    <p class="fw-bold card-text">Jaione Perez</p>
+                    <p class="card-text">Ordu 1</p>
+                </header>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <img class="img-fluid" src="images/paisaje1.jpg" alt="">
+                    <div class="d-inline-flex justify-content-between">
+                        <a href=""><i class="bi bi-hand-thumbs-up-fill"></i><p class="d-inline-flex">60</p></a>
+                        <a href=""><p class="text-end">7 iruzkin</p></a>
+                    </div>
+                    <div class="d-inline-flex justify-content-around">
+                        <button type="button" class="btn" role="button"><i class="bi bi-hand-thumbs-up m-2"></i>Atsegin dut</button>
+                        <button type="button" class="btn" role="button"><i class="bi bi-chat m-2"></i>Iruzkindu</button>
+                    </div>
+            </article>
+            <article class="card container-fluid mt-2">
+                <header class="card-subtitle">
+                    <img class="card-img-top img-fluid rounded-circle float-start m-2" src="images/persona2.jpg" alt="" />
+                    <p class="fw-bold card-text">Iker Arana</p>
+                    <p class="card-text">2 ordu</p>
+                </header>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <img class="img-fluid" src="images/paisaje2.jpg" alt="">
+                    <div class="d-inline-flex justify-content-between">
+                        <a href=""><i class="bi bi-hand-thumbs-up-fill"></i><p class="d-inline-flex">75</p></a>
+                        <a href=""><p class="text-end">3 iruzkin</p></a>
+                    </div>
+                    <div class="d-inline-flex justify-content-around">
+                        <button type="button" class="btn" role="button"><i class="bi bi-hand-thumbs-up m-2"></i>Atsegin dut</button>
+                        <button type="button" class="btn" role="button"><i class="bi bi-chat m-2"></i>Iruzkindu</button>
+                    </div>
+            </article>
+        </section>
+        <section class="col d-none d-md-block">
+            <article>
+                <p class="fw-bold">Kontaktuak</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="">
+                        <img class="img-fluid rounded-circle" src="images/persona2.jpg" alt="" />
+                        <p>Iker Arana</p>
+                    </a></li>
+                    <li class="list-group-item"><a href="">
+                        <img class="img-fluid rounded-circle" src="images/persona3.jpg" alt="" />
+                        <p>Jaione Perez</p>
+                    </a></li>
+                    <li class="list-group-item"><a href="">
+                        <img class="img-fluid rounded-circle" src="images/persona4.jpg" alt="" />
+                        <p>Mikel Ardanza</p>
+                    </a></li>
+                    <li class="list-group-item"><a href="">
+                        <img class="img-fluid rounded-circle" src="images/persona5.jpg" alt="" />
+                        <p>Itziar Gortazar</p>
+                    </a></li>
+                </ul>
+            </article>
+            <article>
+                <p class="fw-bold">Taldeak</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="">
+                        <img class="img-fluid rounded-circle" src="images/DAM.png" alt="" />
+                        <p>DAM</p>
+                    </a></li>
+                    <li class="list-group-item"><a href="">
+                        <img class="img-fluid rounded-circle" src="images/DAW.png" alt="" />
+                        <p>DAW</p>
+                    </a></li>
+                </ul>
+            </article>
+            <article>
+                <p class="fw-bold">Babestua</p>
+                <img class="img-fluid" src="images/ad2.jpg" alt="">
+            </article>
+        </section>
+    </main>
     <script src="bootstrap/js/bootstrap.bundle.js"></script>
 </body>
 </html>
